@@ -28,3 +28,4 @@ Nous avons utilisé un écran OLED sur le pcb pour choisir entre la mesure du ca
 
 ## PCB Shield Pour Arduino Uno
 ### Partie Kikad
+![SHEMATIC](https://github.com/MOSH-Insa-Toulouse/2023-2024-4GP-RIETHMULLER-GESSINN/assets/160252962/51b6af84-ad8f-4ffb-87dc-6c732b9fce76)
