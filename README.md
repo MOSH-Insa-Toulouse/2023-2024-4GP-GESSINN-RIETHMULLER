@@ -30,6 +30,29 @@ Nous avons utilisé un écran OLED sur le pcb pour choisir entre la mesure du ca
 ### Partie Kikad
 ![SHEMATIC](https://github.com/MOSH-Insa-Toulouse/2023-2024-4GP-RIETHMULLER-GESSINN/assets/160252962/51b6af84-ad8f-4ffb-87dc-6c732b9fce76)
 
-Nous avons commencé par mettre en place un shematic pour notre PCB. Pour cela, nous avons tout d'abord utilisé un template pour arduino uno et nous avons ensuite crée les empreintes et shematic pour chacun des composants sur notre plaque. Ensuite nous avons relié les entrées de chacun des composants aux entrées de l'arduino. Pour cela nous avons du faire des choix que l'on peut retrouver dans le document
+Nous avons commencé par mettre en place un shematic pour notre PCB. Pour cela, nous avons tout d'abord utilisé un template pour arduino uno et nous avons ensuite crée les empreintes et shematic pour chacun des composants sur notre plaque. Ensuite nous avons relié les entrées de chacun des composants aux entrées de l'arduino. Pour cela nous avons du faire des choix que l'on peut retrouver dans le document ci dessous :
 
 https://github.com/MOSH-Insa-Toulouse/2023-2024-4GP-RIETHMULLER-GESSINN/blob/main/Projet%20Capteur%20composants.docx
+
+Nous anvons ensuite procédé à l'organisation de la partie PCB. Nous avons disposé tout les elements sur la plaque et avons relié de façon à avoir un plan de masse sur la plaque et éviter d'avoir a faire des vias. Nous avons choisi d'avoir les pistes sur le dessus du PCB et d'avoir que des composants traverstants. Vous pouvez voir ci dessous le PCB à l'état fini.
+
+Mettre ici l'image du PCB
+
+### Impression du PCB 
+
+Lorsque nous avions fini le PCB il fallait le réaliser. Avec l'aide de Catherine Crouzet nous avons imprimé notre plan de PCB et l'avons réalisé dans l'atelier du Batiment Génie Electrique. Nous avons ensuite percé la plaque à l'aide de forets de 1 ou 0.8 mm. Nous avons ensuite soudé les composant et ajouté des supports pour pouvoir déposer le PCB directement sur l'arduino UNO. Nous avons ensuite effectué des test de contact électrique de nos composants pour vérifier que tout était comme prévu et avons remarqué qu'il y avait une erreur.
+
+![image](https://github.com/MOSH-Insa-Toulouse/2023-2024-4GP-RIETHMULLER-GESSINN/assets/160252962/435726a2-56f5-4d1d-a915-e4f4c4ffa622)
+
+## Code Arduino
+
+## Banc de test
+
+## Application android
+
+Pour la conception de notre application, nous avons utilisé le site MIP App Inventor, le but étant d'avoir accès au résultats de nos mesures sur un téléphone par communication Bluetooth
+
+## Datasheet
+
+
+Au niveau du premier point, deux pistes ne devant pas être relièes entraient en contact et au niveau du seconc, le plan de masse que devait être supposement relié à la masse ne l'était pas. Nous avons donc du remedier à ces problèmes avant de passer à la suite, pour cela nous avons bricolé pour éviter de devoir imprimer le PCB une seconde fois. Nous avons également corrigé cela sur le ficher Kikad qui se trouve sur le dossier en décalent simplement une réistance pour laisser l'espace nécessaire au plan de masse et au passage paralelle des deux pistes.
