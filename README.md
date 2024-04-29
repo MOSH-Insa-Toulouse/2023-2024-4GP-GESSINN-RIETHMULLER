@@ -1,4 +1,4 @@
-# Projet Capteur 
+# Projet Capteur
 
 ## Description du projet
 
