@@ -44,7 +44,7 @@ Lorsque nous avions fini le PCB il fallait le réaliser. Avec l'aide de Catherin
 
 ![image](https://github.com/MOSH-Insa-Toulouse/2023-2024-4GP-RIETHMULLER-GESSINN/assets/160252962/435726a2-56f5-4d1d-a915-e4f4c4ffa622)
 
-Au niveau du premier point, deux pistes ne devant pas être relièes entraient en contact et au niveau du seconc, le plan de masse que devait être supposement relié à la masse ne l'était pas. Nous avons donc du remedier à ces problèmes avant de passer à la suite, pour cela nous avons bricolé pour éviter de devoir imprimer le PCB une seconde fois. Nous avons également corrigé cela sur le ficher Kikad qui se trouve sur le dossier en décalent simplement une réistance pour laisser l'espace nécessaire au plan de masse et au passage paralelle des deux pistes.
+Au niveau du premier point, deux pistes ne devant pas être relièes entraient en contact et au niveau du seconc, le plan de masse que devait être supposement relié à la masse ne l'était pas. Nous avons donc du remedier à ces problèmes avant de passer à la suite, pour cela nous avons bricolé pour éviter de devoir imprimer le PCB une seconde fois. Nous avons également corrigé cela sur le ficher Kikad qui se trouve sur le dossier en décalent simplement une réistance pour laisser l'espace nécessaire au plan de masse et au passage paralèlle des deux pistes.
 
 
 ## Code Arduino
@@ -53,7 +53,18 @@ Au niveau du premier point, deux pistes ne devant pas être relièes entraient e
 
 ## Application android
 
-Pour la conception de notre application, nous avons utilisé le site MIP App Inventor, le but étant d'avoir accès au résultats de nos mesures sur un téléphone par communication Bluetooth
+Pour la conception de notre application, nous avons utilisé le site MIP App Inventor, le but étant d'avoir accès au résultats de nos mesures sur un téléphone par communication Bluetooth. Pour cela nous avons utilisé un "Listpicker" pour connecter l'appareil au téléphone.
+Nous avons ensuite utilisé le module bluetooth pour récuperer 2 messages de 1 octet chacun. Nous avons utilisé un clock pour calibrer l'intervale entre les mesures recues afin d'avoir le même que dans le code. Pour finir nous avons effectué du traitement de données afin d'avoir la variation de la résistance ainsi que les deux valeurs de resistance. Le code donne ceci:
+
+![image](https://github.com/MOSH-Insa-Toulouse/2023-2024-4GP-GESSINN-RIETHMULLER/assets/160252962/e92aab0a-cc5f-41dd-8db0-9391d15ec054)
+
+Comme on peut le voir dans les blocks nous avons utilisé plusieurs variables globales notamment pour les calculs de la résistance du flex sensor. Nous avons également multiplié toutes les mesures recues par 4 car nous les avions divisées par 4 dans le code arduino pour que chaque mesure passe dans un octet. 
+
+Pour ce qui est de la face avant, nous avons choisis un interface relativement simple: 
+![image](https://github.com/MOSH-Insa-Toulouse/2023-2024-4GP-GESSINN-RIETHMULLER/assets/160252962/3ac279fe-c348-4145-982c-41d5a137efaf)
+
+Nous avons un bouton de connexion Bluetooth qui permet de choisir l'appareil à connecter. Nous avons ensuite ajouté des boutons d'arrêt de clock pour pouvoir stopper l'arrivée des mesures si souhaité. Le reste de l'interface est uniquement de l'affichage des mesures.
+
 
 ## Datasheet
 
