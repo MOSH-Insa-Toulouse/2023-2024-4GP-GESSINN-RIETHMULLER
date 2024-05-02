@@ -68,4 +68,8 @@ Nous avons un bouton de connexion Bluetooth qui permet de choisir l'appareil à 
 
 ## Datasheet
 
+## Contacts
 
+Pour toute remarque ou information complémentaire, n'hésitez pas à nous contacter :
+* Clément GESSINN : cgessinn@insa-toulouse.fr
+* Théo RIETHMULLER : riethmul@insa-toulouse.fr
