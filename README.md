@@ -57,7 +57,7 @@ Au niveau du premier point, deux pistes ne devant pas être relièes entraient e
 
 
 ## Code Arduino
-Le code Arduino permet d'effectuer l'acquisition des mesures sur le capteur graphène et sur le flex sensor. Ces mesures sont a la fois affichées sur l'écran Oled et transmies au capteur bluetooth qui pourra les transmettre a un téléphone portable grace à l'application. Vous pouvez retrouver le code dans le dossier "Code Capteur Resistif ". Le code est annoté pour étre le plus lisible possible et suis les pins utilisés dans la partié KIKAD
+Le code Arduino permet d'effectuer l'acquisition des mesures sur le capteur graphène et sur le flex sensor. Ces mesures sont a la fois affichées sur l'écran Oled et transmies au capteur bluetooth qui pourra les transmettre a un téléphone portable grace à l'application. Vous pouvez retrouver le code dans le dossier "Code Capteur Resistif ". Le code est annoté pour étre le plus lisible possible et suis les pins utilisés dans la partie KIKAD.
 ## Banc de test
 Pour les tests nous avons utilisé le banc de tets à disposition et avons éffectué le mesures de la facon suivante :
 
