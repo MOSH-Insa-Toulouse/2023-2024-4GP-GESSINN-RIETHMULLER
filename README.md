@@ -4,7 +4,14 @@
 
 Ce projet a eu lieu dans le cadre de l'UF "du capteur au banc de test" en 4ème année de Génie physique à l'insa Toulouse. Le principe est d'établir une datasheet pour un capteur graphène soit une feuille de papier ou un tracé au crayon a papier est utilisé comme résistance.
 Pour cela nous avons établis un banc de test avce differents composants arduino et avons utilisé le logiciel kikad pour créer un pcb pour les composants. Enfin nous avons éffectué des mesure pour déterminer la variation de la résistance en fonction du graphène et de la flexion du papier.
-Nous avons utilisé un écran OLED sur le pcb pour choisir entre la mesure du capteur grapehène et d'un flex sensor et avons crée un application android pour avoir les valeurs de mesures sur le téléphone à l'aide d'une communication bluetooth.
+Nous avons utilisé un écran OLED sur le pcb pour choisir entre la mesure du capteur grapehène et d'un flex sensor et avons crée une application android pour avoir les valeurs de mesures sur le téléphone à l'aide d'une communication bluetooth.
+
+
+Le Capteur ressemble à ça : 
+
+
+![Image capteur](https://github.com/MOSH-Insa-Toulouse/2023-2024-4GP-GESSINN-RIETHMULLER/assets/160252962/6aa70497-72fb-402d-96f7-90627d9d8904)
+
 
 ## Livrables
 
@@ -36,7 +43,9 @@ https://github.com/MOSH-Insa-Toulouse/2023-2024-4GP-RIETHMULLER-GESSINN/blob/mai
 
 Nous anvons ensuite procédé à l'organisation de la partie PCB. Nous avons disposé tout les elements sur la plaque et avons relié de façon à avoir un plan de masse sur la plaque et éviter d'avoir a faire des vias. Nous avons choisi d'avoir les pistes sur le dessus du PCB et d'avoir que des composants traverstants. Vous pouvez voir ci dessous le PCB à l'état fini.
 
-Mettre ici l'image du PCB
+
+![20240327_160748](https://github.com/MOSH-Insa-Toulouse/2023-2024-4GP-GESSINN-RIETHMULLER/assets/160252962/67dc3ce1-d0b3-48c7-a3f4-7dfa6f7db123)
+
 
 ### Impression du PCB 
 
@@ -48,8 +57,16 @@ Au niveau du premier point, deux pistes ne devant pas être relièes entraient e
 
 
 ## Code Arduino
-
+Le code Arduino permet d'effectuer l'acquisition des mesures sur le capteur graphène et sur le flex sensor. Ces mesures sont a la fois affichées sur l'écran Oled et transmies au capteur bluetooth qui pourra les transmettre a un téléphone portable grace à l'application. Vous pouvez retrouver le code dans le dossier "Code Capteur Resistif ". Le code est annoté pour étre le plus lisible possible et suis les pins utilisés dans la partié KIKAD
 ## Banc de test
+Pour les tests nous avons utilisé le banc de tets à disposition et avons éffectué le mesures de la facon suivante :
+
+
+![ImageBanc](https://github.com/MOSH-Insa-Toulouse/2023-2024-4GP-GESSINN-RIETHMULLER/assets/160252962/5b12095a-7d8d-43bf-9238-2f2d1fdc7298)
+
+Il y 7 étages qui entrainent une déformation différente a chaque fois. Pour le capteur graphène nous avons mesuré pour chaque échelon la variation de resistance en tension et en déformation. Nous avons également réalisé des mesures sur le flex sensor afin de pouvoir comparer. Pour le flex sensor nous avons uniquement procédé en compression car celui-ci n'est fiable que dans un sens.
+
+Les résusltats de nos mesures sont à retrouver dans la partie Datasheet.
 
 ## Application android
 
