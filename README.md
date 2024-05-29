@@ -67,6 +67,20 @@ Nous avons un bouton de connexion Bluetooth qui permet de choisir l'appareil à 
 
 
 ## Datasheet
+Nos avons réalisé de mesures en utilisant differentes valeurs de déformation et nous avons utilisé des crayons à mine H, HB et 2B.
+Nous avons également réalisé de mesures sur le flex sensor en compression.
+On peut voir d'abord les mesures en compression :
+
+
+![image](https://github.com/MOSH-Insa-Toulouse/2023-2024-4GP-GESSINN-RIETHMULLER/assets/160252962/b655ce7f-498c-47d6-baa6-e522eab51e24)
+
+
+Et ensuite les mesures en tension : 
+
+
+![image](https://github.com/MOSH-Insa-Toulouse/2023-2024-4GP-GESSINN-RIETHMULLER/assets/160252962/999608c2-1882-419a-a763-580638636384)
+
+
 
 ## Contacts
 
